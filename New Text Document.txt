@@ -2,8 +2,9 @@
 
 
 #even odd
-read -p "Enter a number: " number
-if [ $((number%2)) -eq 0 ]
+echo "Enter a number: "
+read number
+if  ((number%2==0))
 then
   echo "Number is even."
 else
@@ -12,34 +13,36 @@ fi
 
 
 #factorial
-num=5
-factorial=1
+echo "Enter a number: "
+read num
+f=1
  
-counter=$num
- 
-while [[ $counter -gt 0 ]]; do
-   factorial=$(( $factorial * $counter ))
-   counter=$(( $counter - 1 ))
+for((i=1;i<=5;i++))
+do
+f=$((i*f))
 done
  
-echo $factorial
+echo "$f"
 
 
 
 
 #fibonacci
-N=6
-# Fibonacci Series
+echo "Enter a number: "
+read n
 a=0
 b=1
-echo "The Fibonacci series is : "
-for (( i=0; i<N; i++ ))
+echo $a
+echo $b
+for (( i=2; i<N; i++ ))
 do
-    echo -n "$a "
-    fn=$((a + b))
+    c=$((a+b))
+    echo "$c"
     a=$b
-    b=$fn
+    b=$c
 done
+
+#fibonacci of nth number
 
 
 
