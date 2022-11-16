@@ -17,7 +17,7 @@ echo "Enter a number: "
 read num
 f=1
  
-for((i=1;i<=5;i++))
+for((i=1;i<=num;i++))
 do
 f=$((i*f))
 done
@@ -34,7 +34,7 @@ a=0
 b=1
 echo $a
 echo $b
-for (( i=2; i<N; i++ ))
+for (( i=2; i<n; i++ ))
 do
     c=$((a+b))
     echo "$c"
@@ -43,6 +43,23 @@ do
 done
 
 #fibonacci of nth number
+echo "Enter a number: "
+read n
+if((n<=1))
+then 
+echo "$n"
+else
+a=0
+b=1
+for (( i=2; i<n; i++ ))
+do
+    c=$((a+b))
+    a=$b
+    b=$c
+done
+    echo "$c"
+    fi
+
 
 
 
