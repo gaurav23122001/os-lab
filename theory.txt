@@ -1,0 +1,13 @@
+Kernel:core of UNIX OS and is a large program that is loaded into memory when the machine is turned on.
+Shell:It acts as an interface between user and kernal. it is a CLI.
+
+pwd: print working directory
+cp: copying files from one place to another
+rmdir: delete the directories
+rm: removing files
+who and whoami : who gives who is working and whoami gives who we are in terms of linux
+ps:gives list of process running on a system
+chmod: changes access mode of one or more file
+
+
+SHELL SCRIPT: it is series of commands written in plain text file. it is a computer program designed to run by unix shell.
