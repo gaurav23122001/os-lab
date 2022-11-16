@@ -340,6 +340,41 @@ printf("The PID of the child in q>0 is : %d\n",getpid());
 printf("The PID of the parent in q>0 is : %d\n",q);
 }
 
+// exec
+#include<stdio.h>
+#include<unistd.h>
+int main(){
+printf("Linux is awesome/n");
+return 0;
+}
+
+#include<stdio.h>
+#include<unistd.h>
+#include<stdlib.h>
+int main(){
+char *args[]=("./exec,NULL");
+execvp(args[0],args);
+printf("Windows is awesome);
+return 0;
+}
+
+//wait 
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<sys/wait.h>
+int main(){
+pid_t cid;
+cid=fork();
+if(fork==0) exit(0);
+else cid=wait(NULL);
+printf("pid=%d\n",getpid());
+
+printf("cid=%d\n",cid);
+return 0;
+}
+
 //Zombie Process
 #include <stdlib.h>
 #include <sys/types.h>
@@ -350,6 +385,9 @@ if (child_pid > 0)
 sleep(50);
 else
 exit(0);
+printf("pid=%d\n",getpid());
+
+printf("cid=%d\n",cid);
 return 0;
 }
 
@@ -366,6 +404,9 @@ else if (pid == 0){
 sleep(5);
 printf("in child process\n");
 }
+printf("pid=%d\n",getpid());
+
+printf("cid=%d\n",pid);
 return 0;}
 
 
