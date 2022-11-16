@@ -11,3 +11,11 @@ chmod: changes access mode of one or more file
 
 
 SHELL SCRIPT: it is series of commands written in plain text file. it is a computer program designed to run by unix shell.
+
+SYSTEM CAll: the system call is the means by which a process requests a specific kernel service. they are six:
+1.process control
+2.file maipulation
+3.device manipulation
+4.information maintenance
+5.communication
+6.protection
